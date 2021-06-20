@@ -9,21 +9,41 @@ body {
     color: white;
 }
 
+nav {
+    display: flex;
+}
+
 header {
-    padding: 20px;
+    padding: 50px;
     text-align: center;
     background: darkblue;
     color: darkorange;
     font-size: 20;
     font-family: 'Rubik', sans-serif;
+    
 }
 
-nav {
-    display: flex;
-}
+
 
 #slogan {
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     
+}
+
+.headercontent {
+    display: inline;
+}
+
+.headerimg {
+    float: left;
+    max-width: 15%;
+    height: auto;
+
+}
+
+.topnavbar {
+    background-color: darkorange;
+    justify-content: space-evenly;
+
 }
