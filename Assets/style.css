@@ -42,6 +42,17 @@ header {
 
 .topnavbar {
     background-color: darkorange;
-    justify-content: space-evenly;
+    justify-content: center;
+}
 
+.topnavbar li{
+    display: inline-block;
+    padding: 4px:
+
+}
+
+.logo-img {
+    float: left;
+    max-width: 46px;
+    max-height: 46px;
 }
