@@ -1,4 +1,8 @@
-::root
+:root {
+    --darkcolor: darkblue;
+    --contrastcolor: darkorange;
+    --lightcolor: white;
+}
 
 * {
     box-sizing: border-box;
