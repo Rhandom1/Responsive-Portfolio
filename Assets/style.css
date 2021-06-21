@@ -34,20 +34,22 @@ header {
 }
 
 .headerimg {
-    float: left;
+    float: right;
     max-width: 15%;
     height: auto;
+    padding-right: 40px;
 
 }
 
 .topnavbar {
-    background-color: darkorange;
+    background-color: darkblue;
     justify-content: center;
 }
 
 .topnavbar li{
     display: inline-block;
-    padding: 4px:
+    padding: 4px;
+    
 
 }
 
