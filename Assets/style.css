@@ -83,6 +83,7 @@ header {
 .projects {
     display: inline-flex;
     border-top: var(--bordercolor);
+    
 }
 
 .projects-aside {
@@ -91,5 +92,11 @@ header {
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
     display: block;
+}
+
+.parallax-card {
+    
+    width: 100%;
+    background-color: var(--darkcolor);
 }
 
