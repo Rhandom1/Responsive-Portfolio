@@ -2,6 +2,7 @@
     --darkcolor: darkblue;
     --contrastcolor: darkorange;
     --lightcolor: white;
+    --bordercolor: black;
 }
 
 * {
@@ -9,10 +10,11 @@
 }
 
 body {
+    display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: black;
-    color: white;
+    color: var(--lightcolor);
 }
 
 nav {
@@ -22,24 +24,17 @@ nav {
 header {
     padding: 50px;
     text-align: center;
-    background: darkblue;
-    color: darkorange;
+    background: var(--darkcolor);
+    color: var(--contrastcolor);
     font-size: 20;
-    font-family: 'Rubik', sans-serif;
-    
+    font-family: 'Rubik', sans-serif;  
 }
 
-aside {
-    float: left;
-    padding: 20px;
-    background-color: darkorange;
-    color: darkblue;
-}
+
 
 #slogan {
-    color: white;
-    font-size: 25px;
-    
+    color: var(--lightcolor);
+    font-size: 25px;   
 }
 
 .headercontent {
@@ -51,19 +46,16 @@ aside {
     max-width: 15%;
     height: auto;
     padding-right: 40px;
-
 }
 
 .topnavbar {
-    background-color: darkblue;
+    background-color: var(--darkcolor);
     justify-content: center;
 }
 
 .topnavbar li{
-    display: inline-block;
+    display: inline;
     padding: 4px;
-    
-
 }
 
 .logo-img {
@@ -71,3 +63,33 @@ aside {
     max-width: 46px;
     max-height: 46px;
 }
+
+.about-me {
+    display: inline-flex;
+    border-top: 5px solid black;   
+}
+
+.about-me-aside {
+    float: left;
+    padding: 20px;
+    background-color: var(--contrastcolor);
+    color: var(--darkcolor);
+}
+
+.about-me-text {
+    background-color: var(--darkcolor);   
+}
+
+.projects {
+    display: inline-flex;
+    display: block;
+}
+
+.projects-aside {
+    float: left;
+    padding: 20px;
+    background-color: var(--contrastcolor);
+    color: var(--darkcolor);
+    display: block;
+}
+
