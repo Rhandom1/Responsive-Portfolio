@@ -104,8 +104,14 @@ header {
 }
 
 .bottom-projects {
-    display: inline
+    display: inline-flex;
     
+}
+
+.bottom-projects img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
 }
 
 
