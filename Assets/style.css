@@ -13,7 +13,7 @@ body {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: salmon;
+    background-color: var(--darkcolor);
     color: var(--lightcolor);
 }
 
@@ -83,6 +83,7 @@ header {
 .projects {
     display: inline-flex;
     border-top: var(--bordercolor);
+    width: 100%;
     
 }
 
@@ -95,8 +96,12 @@ header {
 }
 
 .parallax-card {
-    
     width: 100%;
     background-color: var(--darkcolor);
+    margin-left: 300px;
+    text-align: center;
+    cursor: pointer;
 }
+
+
 
