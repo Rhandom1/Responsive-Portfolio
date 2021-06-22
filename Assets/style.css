@@ -2,7 +2,7 @@
     --darkcolor: darkblue;
     --contrastcolor: darkorange;
     --lightcolor: white;
-    --bordercolor: black;
+    --bordercolor: 5px solid black;
 }
 
 * {
@@ -13,7 +13,7 @@ body {
     display: inline-block;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: black;
+    background-color: salmon;
     color: var(--lightcolor);
 }
 
@@ -66,7 +66,7 @@ header {
 
 .about-me {
     display: inline-flex;
-    border-top: 5px solid black;   
+    border-top: var(--bordercolor);   
 }
 
 .about-me-aside {
@@ -82,7 +82,7 @@ header {
 
 .projects {
     display: inline-flex;
-    display: block;
+    border-top: var(--bordercolor);
 }
 
 .projects-aside {
