@@ -7,11 +7,13 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
 }
 
 body {
-    display: flexbox;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: var(--darkcolor);
@@ -35,22 +37,21 @@ header {
     font-family: 'Rubik', sans-serif;  
 }
 
-
-
-#slogan {
-    color: var(--lightcolor);
-    font-size: 25px;   
+nav a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-.headercontent {
-    display: inline;
+nav a:visited {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
 }
 
-.headerimg {
-    float: right;
-    max-width: 15%;
-    height: auto;
-    padding-right: 40px;
+nav a:hover {
+    background-color: pink;
+    text-decoration: none;
 }
 
 .topnavbar {
@@ -69,13 +70,28 @@ header {
     max-height: 46px;
 }
 
+header {
+    width: 100%;
+    background-image: linear-gradient(darkorange, yellow);
+}
+
+#slogan {
+    color: var(--lightcolor);
+    font-size: 25px;   
+}
+
+.headercontent {
+    display: inline;
+    color: var(--darkcolor);
+}
+
 .about-me {
     display: inline-flex;
     border-top: var(--bordercolor);   
 }
 
 .about-me-aside {
-    float: left;
+    justify-content: flex-start;
     padding: 20px;
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
@@ -97,11 +113,11 @@ header {
 }
 
 .projects-aside {
-    
+    align-items: flex-start;
     padding: 20px;
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
-    
+    border: 5px soild black;
 }
 
 .parallax-card {
@@ -122,6 +138,32 @@ header {
     height: 150px;
     object-fit: contain;
 }
+
+.contact {
+    display: inline-flex;
+    width: 100%;
+    border: 5px solid black;
+    
+}
+
+footer a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: pink;
+    text-decoration: none;
+}
+
+
 
 
 
