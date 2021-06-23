@@ -31,9 +31,8 @@ nav li {
 }
 
 header {
-    padding: 50px;
+    padding: 30px;
     text-align: center;
-    background-image: url('./Images/Disboobash19\ \(2\).jpeg');
     color: var(--contrastcolor);
     font-size: 20;
     font-family: 'Rubik', sans-serif;  
@@ -67,7 +66,7 @@ nav a:hover {
 }
 
 .logo-img {
-    float: left;
+    align-items: flex-start;
     max-width: 46px;
     max-height: 46px;
     padding-bottom: 5px;
@@ -94,7 +93,6 @@ header {
 }
 
 .about-me-aside {
-    /* justify-content: flex-start; */
     padding: 20px;
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
@@ -116,7 +114,6 @@ header {
 }
 
 .projects-aside {
-    align-items: flex-start;
     padding: 20px;
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
@@ -147,6 +144,11 @@ header {
     width: 100%;
     border: var(--bordercolor);
     
+}
+
+footer h2 {
+    background-color: var(--contrastcolor);
+    color: var(--darkcolor);
 }
 
 footer a:link {
