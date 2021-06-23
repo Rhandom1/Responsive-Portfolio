@@ -1,8 +1,8 @@
 :root {
-    --darkcolor: darkblue;
-    --contrastcolor: darkorange;
+    --darkcolor: #2C439B;
+    --contrastcolor: #F89A45;
     --lightcolor: white;
-    --bordercolor: 5px solid black;
+    --bordercolor: 3px solid black;
 }
 
 * {
@@ -22,6 +22,8 @@ body {
 
 nav {
     display: inline-flex;
+    border: var(--bordercolor);
+    width: 100%;
 }
 
 nav li {
@@ -50,7 +52,7 @@ nav a:visited {
 }
 
 nav a:hover {
-    background-color: pink;
+    background-color: brown;
     text-decoration: none;
 }
 
@@ -68,15 +70,16 @@ nav a:hover {
     float: left;
     max-width: 46px;
     max-height: 46px;
+    padding-bottom: 5px;
 }
 
 header {
     width: 100%;
-    background-image: linear-gradient(darkorange, yellow);
+    background-image: linear-gradient(yellow, darkorange);
 }
 
 #slogan {
-    color: var(--lightcolor);
+    color: brown;
     font-size: 25px;   
 }
 
@@ -91,7 +94,7 @@ header {
 }
 
 .about-me-aside {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     padding: 20px;
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
@@ -104,7 +107,7 @@ header {
 }
 
 .projects {
-    display: flex;
+    display: inline-flex;
     border-top: var(--bordercolor);
     width: 100%;
     border: 5px solid yellow;
@@ -142,7 +145,7 @@ header {
 .contact {
     display: inline-flex;
     width: 100%;
-    border: 5px solid black;
+    border: var(--bordercolor);
     
 }
 
@@ -159,7 +162,7 @@ footer a:visited {
 }
 
 footer a:hover {
-    background-color: pink;
+    background-color: brown;
     text-decoration: none;
 }
 
