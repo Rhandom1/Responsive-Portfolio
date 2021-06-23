@@ -10,7 +10,8 @@
 }
 
 body {
-    display: inline-block;
+    display: flexbox;
+    flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: var(--darkcolor);
@@ -18,13 +19,17 @@ body {
 }
 
 nav {
-    display: flex;
+    display: inline-flex;
+}
+
+nav li {
+    justify-content: flex-end;
 }
 
 header {
     padding: 50px;
     text-align: center;
-    background: var(--darkcolor);
+    background-image: url('./Images/Disboobash19\ \(2\).jpeg');
     color: var(--contrastcolor);
     font-size: 20;
     font-family: 'Rubik', sans-serif;  
@@ -74,6 +79,7 @@ header {
     padding: 20px;
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
+    border-right: var(--bordercolor);
 }
 
 .about-me-text {
@@ -82,30 +88,32 @@ header {
 }
 
 .projects {
-    display: inline-flex;
+    display: flex;
     border-top: var(--bordercolor);
     width: 100%;
+    border: 5px solid yellow;
+
     
 }
 
 .projects-aside {
-    float: left;
+    
     padding: 20px;
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
-    display: block;
+    
 }
 
 .parallax-card {
     width: 100%;
     background-color: var(--darkcolor);
-    margin-left: 300px;
     text-align: center;
     cursor: pointer;
 }
 
 .bottom-projects {
-    display: inline-flex;
+    display: flex;
+    text-align: center;
     
 }
 
@@ -114,6 +122,8 @@ header {
     height: 150px;
     object-fit: contain;
 }
+
+
 
 
 
