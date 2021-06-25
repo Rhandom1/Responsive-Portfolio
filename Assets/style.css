@@ -3,7 +3,6 @@
     --contrastcolor: #F89A45;
     --lightcolor: white;
     --bordercolor: 3px solid black;
-    --leftbannerwidth:
 }
 
 * {
@@ -166,9 +165,9 @@ footer h2 {
     color: var(--darkcolor);
 }
 
-footer ul {
-    display: inline-flex;
-    justify-content: space-around;
+.contact-info {
+    display: flex;
+    list-style-type: none;
 }
 
 footer a:link {
