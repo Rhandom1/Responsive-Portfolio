@@ -21,12 +21,14 @@ body {
 }
 
 nav {
-    display: inline-flex;
+    display: inline;
     border: var(--bordercolor);
     width: 100%;
 }
 
-
+nav p {
+    
+}
 
 nav a:link {
     color: white;
@@ -53,14 +55,17 @@ nav a:hover {
 .topnavbar li{
     display: inline;
     padding: 4px;
+    float: right;
 }
 
 .logo-img {
-    align-items: flex-start;
+    float: left;
     max-width: 46px;
     max-height: 46px;
     padding-bottom: 5px;
 }
+
+
 
 #slogan {
     color: brown;
