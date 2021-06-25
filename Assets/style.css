@@ -3,6 +3,7 @@
     --contrastcolor: #F89A45;
     --lightcolor: white;
     --bordercolor: 3px solid black;
+    --leftbannerwidth:
 }
 
 * {
@@ -26,17 +27,7 @@ nav {
     width: 100%;
 }
 
-nav li {
-    justify-content: flex-end;
-}
 
-header {
-    padding: 30px;
-    text-align: center;
-    color: var(--contrastcolor);
-    font-size: 20;
-    font-family: 'Rubik', sans-serif;  
-}
 
 nav a:link {
     color: white;
@@ -72,14 +63,19 @@ nav a:hover {
     padding-bottom: 5px;
 }
 
-header {
-    width: 100%;
-    background-image: linear-gradient(yellow, darkorange);
-}
-
 #slogan {
     color: brown;
     font-size: 25px;   
+}
+
+header {
+    padding: 30px;
+    text-align: center;
+    color: var(--contrastcolor);
+    font-size: 20;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    background-image: linear-gradient(yellow, darkorange);  
 }
 
 .headercontent {
@@ -87,12 +83,27 @@ header {
     color: var(--darkcolor);
 }
 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100%;
+    width: 100px;
+    position: absolute;
+    padding: 5px;
+    background-color: var(--contrastcolor);
+    border: 3px solid white;
+}
+
 .about-me {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     border-top: var(--bordercolor);   
 }
 
 .about-me-aside {
+    margin: 0;
     padding: 20px;
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
@@ -105,19 +116,19 @@ header {
 }
 
 .projects {
-    display: inline-flex;
+    display: flex;
     border-top: var(--bordercolor);
     width: 100%;
-    border: 5px solid yellow;
-
     
 }
 
 .projects-aside {
+    margin: 0;
     padding: 20px;
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
-    border: 5px soild black;
+    width: 115px;
+    border-right: var(--bordercolor);
 }
 
 .parallax-card {
@@ -140,15 +151,24 @@ header {
 }
 
 .contact {
-    display: inline-flex;
+    display: inline;
+    text-align: center;
     width: 100%;
     border: var(--bordercolor);
     
 }
 
 footer h2 {
+    width: 115px;
+    float: left;
+    border-right: var(--bordercolor);
     background-color: var(--contrastcolor);
     color: var(--darkcolor);
+}
+
+footer ul {
+    display: inline-flex;
+    justify-content: space-around;
 }
 
 footer a:link {
@@ -167,6 +187,8 @@ footer a:hover {
     background-color: brown;
     text-decoration: none;
 }
+
+@media 
 
 
 
