@@ -7,27 +7,31 @@
 
 * {
     box-sizing: border-box;
-    padding: 0;
-    margin: 0 auto;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     background-color: var(--darkcolor);
     color: var(--lightcolor);
 }
 
-nav {
-    display: inline;
+.topnav {
+    display: flex;
     border: var(--bordercolor);
-    width: 100%;
+
 }
 
-nav p {
-    
+.topnav li:first-child {
+    margin-right: auto;
+
+}
+
+.topnav a {
+    display: flex;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: cornsilk;
 }
 
 nav a:link {
@@ -49,23 +53,20 @@ nav a:hover {
 
 .topnavbar {
     background-color: var(--darkcolor);
-    justify-content: center;
 }
 
 .topnavbar li{
-    display: inline;
-    padding: 4px;
+    /* display: inline; */
+    padding: 10px;
     float: right;
+    list-style-type: none;
 }
 
 .logo-img {
-    float: left;
     max-width: 46px;
     max-height: 46px;
     padding-bottom: 5px;
 }
-
-
 
 #slogan {
     color: brown;
@@ -87,65 +88,83 @@ header {
     color: var(--darkcolor);
 }
 
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    height: 100%;
-    width: 100px;
-    position: absolute;
-    padding: 5px;
-    background-color: var(--contrastcolor);
-    border: 3px solid white;
-}
-
 .about-me {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
     border-top: var(--bordercolor);   
+}
+
+.about-me-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-me img {
+    max-width: 100%;
+}
+
+.about-me-img {
+    flex-basis: 30%;
 }
 
 .about-me-aside {
     margin: 0;
     padding: 20px;
-    background-color: var(--contrastcolor);
-    color: var(--darkcolor);
-    border-right: var(--bordercolor);
+    color: var(--contrastcolor);
+    border-bottom: 5px solid #F89A45;
 }
 
 .about-me-text {
     background-color: var(--darkcolor);
+    font-size: 20px;
     padding: 10px;   
 }
 
 .projects {
     display: flex;
-    border-top: var(--bordercolor);
-    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: var(--bordercolor); 
     
 }
 
 .projects-aside {
     margin: 0;
     padding: 20px;
-    background-color: var(--contrastcolor);
-    color: var(--darkcolor);
-    width: 115px;
-    border-right: var(--bordercolor);
+    color: var(--contrastcolor);
+    border-bottom: 5px solid #F89A45;
 }
 
-.parallax-card {
-    width: 100%;
-    background-color: var(--darkcolor);
+.top-image {
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
     text-align: center;
+    background-color: var(--darkcolor);
     cursor: pointer;
 }
 
+.top-image img {
+    object-fit: fill;
+    margin: 0 auto;
+}
+
 .bottom-projects {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     text-align: center;
     
+}
+
+.grid-item {
+    padding: 20px;
+    place-items: center;
 }
 
 .bottom-projects img {
@@ -158,20 +177,22 @@ header {
     display: inline;
     text-align: center;
     width: 100%;
-    border: var(--bordercolor);
+    /* border: var(--bordercolor); */
+    flex-shrink: 1;
     
 }
 
 footer h2 {
     width: 115px;
     float: left;
-    border-right: var(--bordercolor);
-    background-color: var(--contrastcolor);
-    color: var(--darkcolor);
+    border-bottom: 5px solid var(--contrastcolor);
+    color: var(--contrastcolor);
 }
 
 .contact-info {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
 }
 
@@ -192,7 +213,52 @@ footer a:hover {
     text-decoration: none;
 }
 
-@media 
+@media screen and (max-width: 768px) {
+    nav a {
+        display: flex;
+        flex-direction: column;
+    }
+    header h3 {
+        display: none;
+    }
+    .projects-aside {
+        width: 15%;
+    }
+    .about-me-aside {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content:space-evenly;
+    }
+
+    .topnev li {
+        padding: 0
+    }
+
+    header h3 {
+        
+    }
+    
+    .about-me-img {
+        display: none;
+    }
+
+    .about-me-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-aside {
+        width: 30%
+    }
+
+
+}
 
 
 
