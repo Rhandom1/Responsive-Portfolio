@@ -131,16 +131,20 @@ header {
     align-items: center;
     justify-content: center;
     border-top: var(--bordercolor); 
+    margin: 0;
     
 }
 
 .projects-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 0;
     padding: 20px;
     color: var(--contrastcolor);
     border-bottom: 5px solid #F89A45;
 }
-
+/* Effects the div */
 .top-image {
     width: 300px;
     height: auto;
@@ -149,8 +153,9 @@ header {
     background-color: var(--darkcolor);
     cursor: pointer;
 }
-
+/* Effects the image of the div */
 .top-image img {
+    width: 100%;
     object-fit: fill;
     margin: 0 auto;
 }
